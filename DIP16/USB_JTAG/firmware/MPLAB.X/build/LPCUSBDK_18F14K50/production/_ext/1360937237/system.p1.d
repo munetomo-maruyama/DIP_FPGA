@@ -1,0 +1,19 @@
+ build/LPCUSBDK_18F14K50/production/_ext/1360937237/system.d  \
+ build/LPCUSBDK_18F14K50/production/_ext/1360937237/system.p1:  \
+ ../src/system.c  \
+../../mla/framework/usb/usb_common.h  \
+../src/power.h  \
+../../mla/framework/usb/usb_ch9.h  \
+../src/buttons.h  \
+../../mla/framework/usb/usb_hal_pic18.h  \
+../src/system.h  \
+../src/usart.h  \
+../src/usb_config.h  \
+../../mla/framework/usb/usb.h  \
+../../mla/framework/usb/usb_device.h  \
+../../mla/framework/usb/usb_hal.h  \
+../src/system_config.h  \
+../src/adc.h  \
+../src/leds.h  \
+../src/fixed_address_memory.h  \
+../src/io_mapping.h 

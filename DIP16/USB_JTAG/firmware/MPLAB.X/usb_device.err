@@ -1,0 +1,7 @@
+Error[1027] ../../mla/framework/usb/src/usb_device.c 50 : unable to locate 'stdint.h'
+Error[1027] ../../mla/framework/usb/src/usb_device.c 53 : unable to locate 'system.h'
+Error[1027] ../../mla/framework/usb/src/usb_device.c 54 : unable to locate 'system_config.h'
+Error[1027] ../../mla/framework/usb/src/usb_device.c 56 : unable to locate 'usb/usb.h'
+Error[1027] ../../mla/framework/usb/src/usb_device.c 57 : unable to locate 'usb/usb_ch9.h'
+Error[1027] ../../mla/framework/usb/src/usb_device.c 58 : unable to locate 'usb/usb_device.h'
+Error[1027] ../../mla/framework/usb/src/usb_device.c 59 : unable to locate 'usb/src/usb_device_local.h'

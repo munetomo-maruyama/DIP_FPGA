@@ -1,0 +1,105 @@
+//===================================
+// BlinkLED : FPGA Top
+//     2025.12.24 Munetomo Maruyama
+//===================================
+
+//-------------------
+// Top Module
+//-------------------
+module FPGA
+(
+    output logic LED,
+    output logic LED1,
+    output logic LED2,
+    output logic LED3
+);
+
+assign LED1 = ~LED;
+assign LED2 =  LED;
+assign LED3 = ~LED;
+
+//----------------------
+// Internal Oscillator
+//----------------------
+logic oscena;
+logic clk;
+//
+assign oscena = 1'b1;
+//
+OSC U_OSC
+(
+    .oscena (oscena),
+    .clkout (clk)      // 55MHz
+);
+
+//--------------------------
+// Internal Power on Reset
+//--------------------------
+//
+// period of power on reset 
+`ifdef SIMULATION
+    `define POR_MAX 16'h000f
+`else  // Real FPGA
+    `define POR_MAX 16'hffff 
+`endif
+//
+logic        por_n;     // should be power-up level = Low
+logic [15:0] por_count; // should be power-up level = Low
+//
+always @(posedge clk)
+begin
+    if (por_count != `POR_MAX)
+    begin
+        por_n <= 1'b0;
+        por_count <= por_count + 16'h0001;
+    end
+    else
+    begin
+        por_n <= 1'b1;
+        por_count <= por_count;
+    end
+end
+//
+logic res; // System Reset in FPGA
+assign res = ~por_n;
+
+//--------------------------------
+// LED Blink Interval Counter
+//--------------------------------
+// Interval of LED ON/OFF
+`ifdef SIMULATION
+    `define LED_MAX ((32'd256/2)-32'd1)
+`else  // Real FPGA
+    `define LED_MAX ((32'd55000000/2)-32'd1)
+`endif
+//
+logic [31:0] led_count;
+logic        led_count_max;
+//
+always @(posedge clk, posedge res)
+begin
+    if (res)
+        led_count <= 32'h00000000;
+    else if (led_count_max)
+        led_count <= 32'h00000000;
+    else    
+        led_count <= led_count + 32'h00000001;
+end
+//
+assign led_count_max = (led_count == `LED_MAX);
+
+//--------------------------------
+// LED Toggle
+//--------------------------------
+always @(posedge clk, posedge res)
+begin
+    if (res)
+        LED <= 1'b0;
+    else if (led_count_max)
+        LED <= ~LED;
+end
+
+endmodule
+//===================================
+// End of Module
+//===================================

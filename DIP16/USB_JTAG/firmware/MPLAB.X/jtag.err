@@ -1,0 +1,3 @@
+Error[1027] ../src/jtag.h 15 : unable to locate 'system.h'
+Error[1027] ../src/jtag.h 16 : unable to locate 'system_config.h'
+Error[1027] ../src/jtag.h 18 : unable to locate 'xc.h'

@@ -1,0 +1,21 @@
+ build/LPCUSBDK_18F14K50/production/_ext/1360937237/app_device_vendor_basic.d  \
+ build/LPCUSBDK_18F14K50/production/_ext/1360937237/app_device_vendor_basic.p1:  \
+ ../src/app_device_vendor_basic.c  \
+../../mla/framework/usb/usb_common.h  \
+../src/power.h  \
+../../mla/framework/usb/usb_ch9.h  \
+../src/buttons.h  \
+../../mla/framework/usb/usb_hal_pic18.h  \
+../../mla/framework/usb/usb_device_generic.h  \
+../src/system.h  \
+../src/usart.h  \
+../src/usb_config.h  \
+../../mla/framework/usb/usb.h  \
+../../mla/framework/usb/usb_device.h  \
+../../mla/framework/usb/usb_hal.h  \
+../src/system_config.h  \
+../src/adc.h  \
+../src/app_led_usb_status.h  \
+../src/leds.h  \
+../src/fixed_address_memory.h  \
+../src/io_mapping.h 

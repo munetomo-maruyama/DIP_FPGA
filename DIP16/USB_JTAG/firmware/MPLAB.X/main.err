@@ -1,0 +1,8 @@
+Error[1027] ../src/main.c 88 : unable to locate 'system.h'
+Error[1027] ../src/main.c 89 : unable to locate 'system_config.h'
+Error[1027] ../src/main.c 91 : unable to locate 'usb/usb.h'
+Error[1027] ../src/main.c 92 : unable to locate 'usb/usb_device.h'
+Error[1027] ../src/main.c 93 : unable to locate 'usb/usb_device_generic.h'
+Error[1027] ../src/blaster.h 17 : unable to locate 'system.h'
+Error[1027] ../src/blaster.h 18 : unable to locate 'system_config.h'
+Error[1027] ../src/blaster.h 20 : unable to locate 'xc.h'

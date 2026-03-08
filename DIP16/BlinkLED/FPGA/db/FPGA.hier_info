@@ -1,0 +1,17 @@
+|FPGA
+LED << LED~reg0.DB_MAX_OUTPUT_PORT_TYPE
+DUMMY1 => ~NO_FANOUT~
+DUMMY2 <> DUMMY2
+DUMMY3 << <GND>
+
+
+|FPGA|OSC:U_OSC
+clkout <= altera_int_osc:int_osc_0.clkout
+oscena => oscena.IN1
+
+
+|FPGA|OSC:U_OSC|altera_int_osc:int_osc_0
+clkout <= oscillator_dut.CLKOUT
+oscena => oscillator_dut.OSCENA
+
+

@@ -1,0 +1,149 @@
+m255
+K4
+z2
+!s12c _opt1
+Z0 !s99 nomlopt
+Z1 !s12c _opt
+R0
+R1
+R0
+!s11f vlog 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 dZ:/Documents/CQ/DIP_FPGA/BlinkLED/SIM
+T_opt
+!s110 1766661689
+VHHNMF8R24?WFn5f2o4n?h3
+Z3 04 6 4 work tb_TOP fast 0
+=2-001c42dda4a5-694d1e38-2b3-2c18
+R0
+Z4 !s12b OEM100
+Z5 !s124 OEM10U4 
+Z6 o-quiet -auto_acc_if_foreign -work work -L altera_mf_ver -L fiftyfivenm_ver +acc
+Z7 tCvgOpt 0
+n@_opt
+Z8 OL;O;2023.3;77
+R2
+T_opt1
+!s110 1766846064
+VODej:]K3QS9XQ?W[:1aNk1
+R3
+=1-001c42dda4a5-694fee6f-1e3-1924
+R0
+R4
+R5
+R6
+R7
+n@_opt1
+R8
+valtera_int_osc
+Z9 2../FPGA/OSC/synthesis/OSC.v|../FPGA/OSC/synthesis/submodules/altera_int_osc.v|../RTL/top.sv|./tb_TOP.sv
+Z10 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z11 !s110 1766846062
+!i10b 1
+!s100 ?jTScY^16^;oY08UFDACb2
+IO86VH]3ZTYeHPIab0F:XM0
+S1
+Z12 dC:/Mac/Home/Documents/CQ/DIP_FPGA/BlinkLED/SIM
+Z13 w1766769872
+8../FPGA/OSC/synthesis/submodules/altera_int_osc.v
+F../FPGA/OSC/synthesis/submodules/altera_int_osc.v
+!i122 6
+L0 38 32
+Z14 VDg1SIo80bB@j0V0VzS_@n1
+Z15 OL;L;2023.3;77
+r1
+!s85 0
+31
+Z16 !s108 1766846062.000000
+Z17 !s107 ./tb_TOP.sv|../RTL/top.sv|../FPGA/OSC/synthesis/submodules/altera_int_osc.v|../FPGA/OSC/synthesis/OSC.v|
+Z18 !s90 -reportprogress|300|-work|work|-sv|+incdir+../RTL|-timescale=1ns/100ps|+define+SIMULATION|../FPGA/OSC/synthesis/OSC.v|../FPGA/OSC/synthesis/submodules/altera_int_osc.v|../RTL/top.sv|./tb_TOP.sv|
+!i113 0
+Z19 o-work work -sv -timescale=1ns/100ps -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z20 !s92 -work work -sv +incdir+../RTL -timescale=1ns/100ps +define+SIMULATION -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R7
+vFPGA
+R9
+R10
+R11
+!i10b 1
+!s100 danLTRhU=;<3FnEI<aiZ_3
+InGBIT96R_lX:B2J9JINNN3
+S1
+R12
+w1766769165
+8../RTL/top.sv
+F../RTL/top.sv
+!i122 6
+L0 36 99
+R14
+R15
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 0
+R19
+R20
+R7
+n@f@p@g@a
+vOSC
+R9
+R10
+R11
+!i10b 1
+!s100 `6oU5]PHOQTRdE1EA466^3
+I4nLaNX;e`e;M?k>P1o2m]3
+S1
+R12
+R13
+8../FPGA/OSC/synthesis/OSC.v
+F../FPGA/OSC/synthesis/OSC.v
+!i122 6
+L0 6 15
+R14
+R15
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 0
+R19
+R20
+R7
+n@o@s@c
+vtb_TOP
+R9
+R10
+R11
+!i10b 1
+!s100 ?;S?L?`ODmf4Qz20661Z11
+I8?Z3><<YhVg6eXNCJm9P23
+S1
+R12
+w1766579959
+8./tb_TOP.sv
+F./tb_TOP.sv
+!i122 6
+L0 14 56
+R14
+R15
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 0
+R19
+R20
+R7
+ntb_@t@o@p

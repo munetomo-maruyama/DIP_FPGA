@@ -1,0 +1,1353 @@
+[p LITE_MODE AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F14K50 ]
+[d frameptr 4065 ]
+"139 /Users/taka/Documents/CQ/CQ-MAX10/PIC-USB/USB_JTAG/firmware/src/main.c
+[e E3887 . `uc
+DETACHED_STATE 0
+ATTACHED_STATE 1
+POWERED_STATE 2
+DEFAULT_STATE 4
+ADR_PENDING_STATE 8
+ADDRESS_STATE 16
+CONFIGURED_STATE 32
+]
+"165
+[e E3638 . `ui
+EVENT_NONE 0
+EVENT_DEVICE_STACK_BASE 1
+EVENT_HOST_STACK_BASE 100
+EVENT_HUB_ATTACH 101
+EVENT_STALL 102
+EVENT_VBUS_SES_REQUEST 103
+EVENT_VBUS_OVERCURRENT 104
+EVENT_VBUS_REQUEST_POWER 105
+EVENT_VBUS_RELEASE_POWER 106
+EVENT_VBUS_POWER_AVAILABLE 107
+EVENT_UNSUPPORTED_DEVICE 108
+EVENT_CANNOT_ENUMERATE 109
+EVENT_CLIENT_INIT_ERROR 110
+EVENT_OUT_OF_MEMORY 111
+EVENT_UNSPECIFIED_ERROR 112
+EVENT_DETACH 113
+EVENT_TRANSFER 114
+EVENT_SOF 115
+EVENT_RESUME 116
+EVENT_SUSPEND 117
+EVENT_RESET 118
+EVENT_DATA_ISOC_READ 119
+EVENT_DATA_ISOC_WRITE 120
+EVENT_OVERRIDE_CLIENT_DRIVER_SELECTION 121
+EVENT_1MS 122
+EVENT_GENERIC_BASE 400
+EVENT_MSD_BASE 500
+EVENT_HID_BASE 600
+EVENT_PRINTER_BASE 700
+EVENT_CDC_BASE 800
+EVENT_CHARGER_BASE 900
+EVENT_AUDIO_BASE 1000
+EVENT_USER_BASE 10000
+EVENT_BUS_ERROR 32767
+]
+"166
+[e E3896 . `uc
+EVENT_CONFIGURED 1
+EVENT_SET_DESCRIPTOR 2
+EVENT_EP0_REQUEST 3
+EVENT_ATTACH 4
+EVENT_TRANSFER_TERMINATED 5
+]
+"183 /Users/taka/Documents/CQ/CQ-MAX10/PIC-USB/USB_JTAG/firmware/src/blaster.c
+[e E4277 Rx_State_Enum `uc
+RX_INIT 0
+RX_PPB_0 1
+RX_PPB_1 2
+]
+"184
+[e E4281 JTAG_State_Enum `uc
+JTAG_BIT_BANG 0
+JTAG_BYTE_SHIFT 1
+]
+"136 /Users/taka/Documents/CQ/CQ-MAX10/PIC-USB/USB_JTAG/mla/framework/usb/src/usb_device.c
+[e E3889 . `uc
+DETACHED_STATE 0
+ATTACHED_STATE 1
+POWERED_STATE 2
+DEFAULT_STATE 4
+ADR_PENDING_STATE 8
+ADDRESS_STATE 16
+CONFIGURED_STATE 32
+]
+"708
+[e E3640 . `ui
+EVENT_NONE 0
+EVENT_DEVICE_STACK_BASE 1
+EVENT_HOST_STACK_BASE 100
+EVENT_HUB_ATTACH 101
+EVENT_STALL 102
+EVENT_VBUS_SES_REQUEST 103
+EVENT_VBUS_OVERCURRENT 104
+EVENT_VBUS_REQUEST_POWER 105
+EVENT_VBUS_RELEASE_POWER 106
+EVENT_VBUS_POWER_AVAILABLE 107
+EVENT_UNSUPPORTED_DEVICE 108
+EVENT_CANNOT_ENUMERATE 109
+EVENT_CLIENT_INIT_ERROR 110
+EVENT_OUT_OF_MEMORY 111
+EVENT_UNSPECIFIED_ERROR 112
+EVENT_DETACH 113
+EVENT_TRANSFER 114
+EVENT_SOF 115
+EVENT_RESUME 116
+EVENT_SUSPEND 117
+EVENT_RESET 118
+EVENT_DATA_ISOC_READ 119
+EVENT_DATA_ISOC_WRITE 120
+EVENT_OVERRIDE_CLIENT_DRIVER_SELECTION 121
+EVENT_1MS 122
+EVENT_GENERIC_BASE 400
+EVENT_MSD_BASE 500
+EVENT_HID_BASE 600
+EVENT_PRINTER_BASE 700
+EVENT_CDC_BASE 800
+EVENT_CHARGER_BASE 900
+EVENT_AUDIO_BASE 1000
+EVENT_USER_BASE 10000
+EVENT_BUS_ERROR 32767
+]
+"2017
+[e E3898 . `uc
+EVENT_CONFIGURED 1
+EVENT_SET_DESCRIPTOR 2
+EVENT_EP0_REQUEST 3
+EVENT_ATTACH 4
+EVENT_TRANSFER_TERMINATED 5
+]
+"298
+[v _USBDeviceInit USBDeviceInit `(v  1 e 1 0 ]
+[v i2_USBDeviceInit USBDeviceInit `(v  1 e 1 0 ]
+"489
+[v _USBDeviceTasks USBDeviceTasks `(v  1 e 1 0 ]
+"878
+[v _USBEnableEndpoint USBEnableEndpoint `(v  1 e 1 0 ]
+"995
+[v _USBTransferOnePacket USBTransferOnePacket `(*.39v  1 e 2 0 ]
+"1352
+[v _USBDeviceAttach USBDeviceAttach `(v  1 e 1 0 ]
+"1416
+[v _USBCtrlEPAllowStatusStage USBCtrlEPAllowStatusStage `(v  1 e 1 0 ]
+"1488
+[v _USBCtrlEPAllowDataStage USBCtrlEPAllowDataStage `(v  1 e 1 0 ]
+"1543
+[v _USBConfigureEndpoint USBConfigureEndpoint `(v  1 s 1 USBConfigureEndpoint ]
+"1616
+[v _USBCtrlEPServiceComplete USBCtrlEPServiceComplete `(v  1 s 1 USBCtrlEPServiceComplete ]
+"1771
+[v _USBCtrlTrfTxService USBCtrlTrfTxService `(v  1 s 1 USBCtrlTrfTxService ]
+"1852
+[v _USBCtrlTrfRxService USBCtrlTrfRxService `(v  1 s 1 USBCtrlTrfRxService ]
+"1968
+[v _USBStdSetCfgHandler USBStdSetCfgHandler `(v  1 s 1 USBStdSetCfgHandler ]
+"2043
+[v _USBStdGetDscHandler USBStdGetDscHandler `(v  1 s 1 USBStdGetDscHandler ]
+"2129
+[v _USBStdGetStatusHandler USBStdGetStatusHandler `(v  1 s 1 USBStdGetStatusHandler ]
+"2202
+[v _USBStallHandler USBStallHandler `(v  1 s 1 USBStallHandler ]
+"2245
+[v _USBSuspend USBSuspend `(v  1 s 1 USBSuspend ]
+"2302
+[v _USBWakeFromSuspend USBWakeFromSuspend `(v  1 s 1 USBWakeFromSuspend ]
+"2369
+[v _USBCtrlEPService USBCtrlEPService `(v  1 s 1 USBCtrlEPService ]
+"2469
+[v _USBCtrlTrfSetupHandler USBCtrlTrfSetupHandler `(v  1 s 1 USBCtrlTrfSetupHandler ]
+"2541
+[v _USBCtrlTrfOutHandler USBCtrlTrfOutHandler `(v  1 s 1 USBCtrlTrfOutHandler ]
+"2595
+[v _USBCtrlTrfInHandler USBCtrlTrfInHandler `(v  1 s 1 USBCtrlTrfInHandler ]
+"2689
+[v _USBCheckStdRequest USBCheckStdRequest `(v  1 s 1 USBCheckStdRequest ]
+"2757
+[v _USBStdFeatureReqHandler USBStdFeatureReqHandler `(v  1 s 1 USBStdFeatureReqHandler ]
+"247 /Users/taka/Documents/CQ/CQ-MAX10/PIC-USB/USB_JTAG/mla/framework/usb/src/usb_device_generic.c
+[v _USBCheckVendorRequest USBCheckVendorRequest `(v  1 e 1 0 ]
+"151 /Users/taka/Documents/CQ/CQ-MAX10/PIC-USB/USB_JTAG/firmware/src/blaster.c
+[v _Blaster_Init Blaster_Init `(v  1 e 1 0 ]
+"172
+[v _USB_Ept_Init USB_Ept_Init `(v  1 e 1 0 ]
+"197
+[v _USB_FT245_Emulation USB_FT245_Emulation `(v  1 e 1 0 ]
+"228
+[v _EEPROM_Read EEPROM_Read `(uc  1 e 1 0 ]
+[v i2_EEPROM_Read EEPROM_Read `(uc  1 e 1 0 ]
+"278
+[v _EEPROM_Checksum EEPROM_Checksum `(v  1 e 1 0 ]
+"297
+[v _TXFIFO_Init TXFIFO_Init `(v  1 e 1 0 ]
+"307
+[v _TXFIFO_Write TXFIFO_Write `(v  1 e 1 0 ]
+"316
+[v _TXFIFO_Read TXFIFO_Read `(v  1 e 1 0 ]
+"329
+[v _TXFIFO_Fill TXFIFO_Fill `(ui  1 e 2 0 ]
+"337
+[v _TXFIFO_Room TXFIFO_Room `(ui  1 e 2 0 ]
+"345
+[v _TIMER0_Start_10ms TIMER0_Start_10ms `(v  1 e 1 0 ]
+"363
+[v _TIMER0_Reach_10ms TIMER0_Reach_10ms `(uc  1 e 1 0 ]
+"374
+[v _Main_Task_Blaster Main_Task_Blaster `(v  1 e 1 0 ]
+"17 /Users/taka/Documents/CQ/CQ-MAX10/PIC-USB/USB_JTAG/firmware/src/jtag.c
+[v _JTAG_Init JTAG_Init `(v  1 e 1 0 ]
+"52
+[v _JTAG_Mode_SPI JTAG_Mode_SPI `(v  1 e 1 0 ]
+"62
+[v _JTAG_Mode_PORT JTAG_Mode_PORT `(v  1 e 1 0 ]
+[v i2_JTAG_Mode_PORT JTAG_Mode_PORT `(v  1 e 1 0 ]
+"70
+[v _JTAG_SPI_Wait JTAG_SPI_Wait `(v  1 e 1 0 ]
+"78
+[v _JTAG_SPI_Put JTAG_SPI_Put `(v  1 e 1 0 ]
+"86
+[v _JTAG_SPI_Get JTAG_SPI_Get `(uc  1 e 1 0 ]
+"130
+[v _bitrev bitrev `(uc  1 e 1 0 ]
+"101 /Users/taka/Documents/CQ/CQ-MAX10/PIC-USB/USB_JTAG/firmware/src/main.c
+[v _main main `(v  1 e 1 0 ]
+"164
+[v _USER_USB_CALLBACK_EVENT_HANDLER USER_USB_CALLBACK_EVENT_HANDLER `(uc  1 e 1 0 ]
+"50 /Users/taka/Documents/CQ/CQ-MAX10/PIC-USB/USB_JTAG/firmware/src/system.c
+[v _SYS_InterruptHigh SYS_InterruptHigh `II(v  1 e 1 0 ]
+"17 /Users/taka/Documents/CQ/CQ-MAX10/PIC-USB/USB_JTAG/firmware/src/timer.c
+[v _Timer_Init Timer_Init `(v  1 e 1 0 ]
+"62 /Applications/microchip/xc8/v1.38/sources/common/float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 /Applications/microchip/xc8/v1.38/sources/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 /Applications/microchip/xc8/v1.38/sources/common/ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 /Applications/microchip/xc8/v1.38/sources/common/ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"20 /Applications/microchip/xc8/v1.38/sources/common/ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"8 /Applications/microchip/xc8/v1.38/sources/common/memset.c
+[v _memset memset `(*.39v  1 e 2 0 ]
+[v i2_memset memset `(*.39v  1 e 2 0 ]
+"10 /Applications/microchip/xc8/v1.38/sources/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"11 /Applications/microchip/xc8/v1.38/sources/common/sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"8 /Applications/microchip/xc8/v1.38/sources/common/sprcmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 /Applications/microchip/xc8/v1.38/sources/common/Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"136 /Users/taka/Documents/CQ/CQ-MAX10/PIC-USB/USB_JTAG/mla/framework/usb/src/usb_device.c
+[v _USBDeviceState USBDeviceState `VEE3887  1 e 1 0 ]
+"137
+[v _USBActiveConfiguration USBActiveConfiguration `VEuc  1 e 1 0 ]
+"138
+[v _USBAlternateInterface USBAlternateInterface `VE[1]uc  1 e 1 0 ]
+[s S935 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"139
+[s S944 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S951 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S955 _BD_STAT 1 `uc 1 Val 1 0 `S935 1 . 1 0 `S944 1 . 1 0 `S951 1 . 1 0 ]
+[s S960 . 4 `S955 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S965 . 4 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`ui 1 ADR 2 2 ]
+[u S969 __BDT 4 `S960 1 . 4 0 `S965 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v _pBDTEntryEP0OutCurrent pBDTEntryEP0OutCurrent `*.39VES969  1 e 2 0 ]
+"140
+[v _pBDTEntryEP0OutNext pBDTEntryEP0OutNext `*.39VES969  1 e 2 0 ]
+"141
+[v _pBDTEntryOut pBDTEntryOut `[3]*.39VES969  1 e 6 0 ]
+"142
+[v _pBDTEntryIn pBDTEntryIn `[3]*.39VES969  1 e 6 0 ]
+"143
+[v _shortPacketStatus shortPacketStatus `VEuc  1 e 1 0 ]
+"144
+[v _controlTransferState controlTransferState `VEuc  1 e 1 0 ]
+[u S825 . 3 `*.2uc 1 bRam 3 0 `*.2Cuc 1 bRom 3 0 `*.2ui 1 wRam 3 0 `*.2Cui 1 wRom 3 0 ]
+"145
+[s S830 . 1 `uc 1 ctrl_trf_mem 1 0 :1:0 
+`uc 1 reserved 1 0 :5:1 
+`uc 1 includeZero 1 0 :1:6 
+`uc 1 busy 1 0 :1:7 
+]
+[u S835 . 1 `S830 1 bits 1 0 `uc 1 Val 1 0 ]
+[s S611 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+[u S614 . 2 `ui 1 Val 2 0 `[2]uc 1 v 2 0 `S611 1 byte 2 0 ]
+[s S845 . 6 `S825 1 pSrc 3 0 `S835 1 info 1 3 `S614 1 wCount 2 4 ]
+[v _inPipes inPipes `VE[1]S845  1 e 6 0 ]
+[u S1381 . 3 `*.2uc 1 bRam 3 0 `*.2ui 1 wRam 3 0 ]
+"146
+[s S1384 . 1 `uc 1 reserved 1 0 :7:0 
+`uc 1 busy 1 0 :1:7 
+]
+[u S1387 . 1 `S1384 1 bits 1 0 `uc 1 Val 1 0 ]
+[s S1391 . 8 `S1381 1 pDst 3 0 `S1387 1 info 1 3 `S614 1 wCount 2 4 `*.37(v 1 pFunc 2 6 ]
+[v _outPipes outPipes `VE[1]S1391  1 e 8 0 ]
+"147
+[v _pDst pDst `*.39VEuc  1 e 2 0 ]
+"148
+[v _RemoteWakeup RemoteWakeup `VEuc  1 e 1 0 ]
+"149
+[v _USBBusIsSuspended USBBusIsSuspended `VEuc  1 e 1 0 ]
+[s S1396 . 1 `uc 1 filler1 1 0 :1:0 
+`uc 1 ping_pong 1 0 :1:1 
+`uc 1 direction 1 0 :1:2 
+`uc 1 endpoint_number 1 0 :4:3 
+]
+"150
+[u S1401 __USTAT 1 `S1396 1 . 1 0 `uc 1 Val 1 0 ]
+[v _USTATcopy USTATcopy `VES1401  1 e 1 0 ]
+"151
+[v _endpoint_number endpoint_number `VEuc  1 e 1 0 ]
+"152
+[v _BothEP0OutUOWNsSet BothEP0OutUOWNsSet `VEuc  1 e 1 0 ]
+[s S1404 . 1 `uc 1 ping_pong_state 1 0 :1:0 
+`uc 1 transfer_terminated 1 0 :1:1 
+]
+"153
+[u S1407 . 1 `S1404 1 bits 1 0 `uc 1 Val 1 0 ]
+[v _ep_data_in ep_data_in `VE[3]S1407  1 e 3 0 ]
+"154
+[v _ep_data_out ep_data_out `VE[3]S1407  1 e 3 0 ]
+"155
+[v _USBStatusStageTimeoutCounter USBStatusStageTimeoutCounter `VEuc  1 e 1 0 ]
+"156
+[v _USBDeferStatusStagePacket USBDeferStatusStagePacket `VEuc  1 e 1 0 ]
+"157
+[v _USBStatusStageEnabledFlag1 USBStatusStageEnabledFlag1 `VEuc  1 e 1 0 ]
+"158
+[v _USBStatusStageEnabledFlag2 USBStatusStageEnabledFlag2 `VEuc  1 e 1 0 ]
+"159
+[v _USBDeferINDataStagePackets USBDeferINDataStagePackets `VEuc  1 e 1 0 ]
+"160
+[v _USBDeferOUTDataStagePackets USBDeferOUTDataStagePackets `VEuc  1 e 1 0 ]
+"167
+[v _BDT BDT `VE[12]S969  1 e 48 @512 ]
+[s S605 . 8 `uc 1 bmRequestType 1 0 `uc 1 bRequest 1 1 `ui 1 wValue 2 2 `ui 1 wIndex 2 4 `ui 1 wLength 2 6 ]
+"172
+[s S632 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`S614 1 W_Value 2 2 `S614 1 W_Index 2 4 `S614 1 W_Length 2 6 ]
+[s S638 . 8 `uc 1 Recipient 1 0 :5:0 
+`uc 1 RequestType 1 0 :2:5 
+`uc 1 DataDir 1 0 :1:7 
+`uc 1 . 1 1 :8:0 
+`uc 1 bFeature 1 2 `uc 1 . 1 3 :8:0 
+`uc 1 . 1 4 :8:0 
+`uc 1 . 1 5 :8:0 
+`uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S649 . 1 `uc 1 recipient 1 0 :5:0 
+`uc 1 type 1 0 :2:5 
+`uc 1 direction 1 0 :1:7 
+]
+[u S653 . 1 `uc 1 bmRequestType 1 0 `S649 1 . 1 0 ]
+[s S656 . 1 `S653 1 requestInfo 1 0 ]
+[s S658 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 bDscIndex 1 2 `uc 1 bDescriptorType 1 3 `ui 1 wLangID 2 4 `uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S666 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 bDevADR 1 2 `uc 1 bDevADRH 1 3 `uc 1 . 1 4 :8:0 
+`uc 1 . 1 5 :8:0 
+`uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S675 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 bConfigurationValue 1 2 `uc 1 bCfgRSD 1 3 `uc 1 . 1 4 :8:0 
+`uc 1 . 1 5 :8:0 
+`uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S684 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 bAltID 1 2 `uc 1 bAltID_H 1 3 `uc 1 bIntfID 1 4 `uc 1 bIntfID_H 1 5 `uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S693 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 . 1 2 :8:0 
+`uc 1 . 1 3 :8:0 
+`uc 1 bEPID 1 4 `uc 1 bEPID_H 1 5 `uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S702 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 . 1 2 :8:0 
+`uc 1 . 1 3 :8:0 
+`uc 1 EPNum 1 4 :4:0 
+`uc 1 . 1 4 :3:4 
+`uc 1 EPDir 1 4 :1:7 
+`uc 1 . 1 5 :8:0 
+`uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[u S713 . 8 `S605 1 . 8 0 `S632 1 . 8 0 `S638 1 . 8 0 `S656 1 . 1 0 `S658 1 . 8 0 `S666 1 . 8 0 `S675 1 . 8 0 `S684 1 . 8 0 `S693 1 . 8 0 `S702 1 . 8 0 ]
+[v _SetupPkt SetupPkt `VES713  1 e 8 @560 ]
+"173
+[v _CtrlTrfData CtrlTrfData `VE[8]uc  1 e 8 @568 ]
+"39 /Users/taka/Documents/CQ/CQ-MAX10/PIC-USB/USB_JTAG/firmware/src/blaster.c
+[v _USB_InPacket USB_InPacket `VE[64]uc  1 e 64 @576 ]
+"40
+[v _USB_OutPacket USB_OutPacket `VE[2][64]uc  1 e 128 @640 ]
+"42
+[v _USB_OutHandle0 USB_OutHandle0 `*.39v  1 e 2 0 ]
+"43
+[v _USB_OutHandle1 USB_OutHandle1 `*.39v  1 e 2 0 ]
+"44
+[v _USB_InHandle0 USB_InHandle0 `*.39v  1 e 2 0 ]
+"46
+[v _eeprom_checksum eeprom_checksum `ui  1 e 2 0 ]
+"48
+[v _TXFIFO TXFIFO `[256]uc  1 e 256 0 ]
+"49
+[v _TXFIFO_rp TXFIFO_rp `uc  1 e 1 0 ]
+[v _TXFIFO_wp TXFIFO_wp `uc  1 e 1 0 ]
+"50
+[v _TXFIFO_ocpy TXFIFO_ocpy `ui  1 e 2 0 ]
+"55
+[v _Rx_State Rx_State `uc  1 e 1 0 ]
+"56
+[v _RxSize RxSize `uc  1 e 1 0 ]
+"57
+[v _ValidPPB ValidPPB `uc  1 e 1 0 ]
+"58
+[v _RxPtr RxPtr `uc  1 e 1 0 ]
+"59
+[v _JTAG_State JTAG_State `uc  1 e 1 0 ]
+"60
+[v _Read Read `uc  1 e 1 0 ]
+"61
+[v _ByteSize ByteSize `uc  1 e 1 0 ]
+"62
+[v _nCS nCS `uc  1 e 1 0 ]
+"94 /Users/taka/Documents/CQ/CQ-MAX10/PIC-USB/USB_JTAG/firmware/src/jtag.c
+[v _REV REV `C[256]uc  1 e 256 0 ]
+[s S134 _USB_DEVICE_DESCRIPTOR 18 `uc 1 bLength 1 0 `uc 1 bDescriptorType 1 1 `ui 1 bcdUSB 2 2 `uc 1 bDeviceClass 1 4 `uc 1 bDeviceSubClass 1 5 `uc 1 bDeviceProtocol 1 6 `uc 1 bMaxPacketSize0 1 7 `ui 1 idVendor 2 8 `ui 1 idProduct 2 10 `ui 1 bcdDevice 2 12 `uc 1 iManufacturer 1 14 `uc 1 iProduct 1 15 `uc 1 iSerialNumber 1 16 `uc 1 bNumConfigurations 1 17 ]
+"160 /Users/taka/Documents/CQ/CQ-MAX10/PIC-USB/USB_JTAG/firmware/src/usb_descriptors.c
+[v _device_dsc device_dsc `CS134  1 e 18 0 ]
+"179
+[v _configDescriptor1 configDescriptor1 `C[32]uc  1 e 32 0 ]
+[s S149 . 4 `uc 1 bLength 1 0 `uc 1 bDscType 1 1 `[1]ui 1 string 2 2 ]
+"219
+[v _sd000 sd000 `CS149  1 e 4 0 ]
+[s S153 . 14 `uc 1 bLength 1 0 `uc 1 bDscType 1 1 `[6]ui 1 string 12 2 ]
+"223
+[v _sd001 sd001 `CS153  1 e 14 0 ]
+[s S157 . 24 `uc 1 bLength 1 0 `uc 1 bDscType 1 1 `[11]ui 1 string 22 2 ]
+"228
+[v _sd002 sd002 `CS157  1 e 24 0 ]
+[s S161 . 18 `uc 1 bLength 1 0 `uc 1 bDscType 1 1 `[8]ui 1 string 16 2 ]
+"242
+[v _sd003 sd003 `CS161  1 e 18 0 ]
+"247
+[v _USB_CD_Ptr USB_CD_Ptr `C[1]*.25Cuc  1 e 2 0 ]
+"252
+[v _USB_SD_Ptr USB_SD_Ptr `C[4]*.25Cuc  1 e 8 0 ]
+"49 /Applications/microchip/xc8/v1.38/include/pic18f14k50.h
+[v _UEP0 UEP0 `VEuc  1 e 1 @3923 ]
+[s S1877 . 1 `uc 1 EPSTALL 1 0 :1:0 
+`uc 1 EPINEN 1 0 :1:1 
+`uc 1 EPOUTEN 1 0 :1:2 
+`uc 1 EPCONDIS 1 0 :1:3 
+`uc 1 EPHSHK 1 0 :1:4 
+]
+"101
+[s S1883 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 EP0CONDIS 1 0 :1:3 
+]
+[s S1886 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 EP0HSHK 1 0 :1:4 
+]
+[s S1889 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 EP0INEN 1 0 :1:1 
+]
+[s S1892 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 EP0OUTEN 1 0 :1:2 
+]
+[s S1895 . 1 `uc 1 EP0STALL 1 0 :1:0 
+]
+[s S1897 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 EPCONDIS0 1 0 :1:3 
+]
+[s S1900 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 EPHSHK0 1 0 :1:4 
+]
+[s S1903 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 EPINEN0 1 0 :1:1 
+]
+[s S1906 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 EPOUTEN0 1 0 :1:2 
+]
+[s S1909 . 1 `uc 1 EPSTALL0 1 0 :1:0 
+]
+[u S1911 . 1 `S1877 1 . 1 0 `S1883 1 . 1 0 `S1886 1 . 1 0 `S1889 1 . 1 0 `S1892 1 . 1 0 `S1895 1 . 1 0 `S1897 1 . 1 0 `S1900 1 . 1 0 `S1903 1 . 1 0 `S1906 1 . 1 0 `S1909 1 . 1 0 ]
+[v _UEP0bits UEP0bits `VES1911  1 e 1 @3923 ]
+"180
+[v _UEP1 UEP1 `VEuc  1 e 1 @3924 ]
+"1097
+[v _UEIE UEIE `VEuc  1 e 1 @3931 ]
+"1147
+[v _UADDR UADDR `VEuc  1 e 1 @3932 ]
+"1318
+[v _UEIR UEIR `VEuc  1 e 1 @3935 ]
+"1368
+[v _UIE UIE `VEuc  1 e 1 @3936 ]
+[s S1602 . 1 `uc 1 URSTIE 1 0 :1:0 
+`uc 1 UERRIE 1 0 :1:1 
+`uc 1 ACTVIE 1 0 :1:2 
+`uc 1 TRNIE 1 0 :1:3 
+`uc 1 IDLEIE 1 0 :1:4 
+`uc 1 STALLIE 1 0 :1:5 
+`uc 1 SOFIE 1 0 :1:6 
+]
+"1384
+[u S1610 . 1 `S1602 1 . 1 0 ]
+[v _UIEbits UIEbits `VES1610  1 e 1 @3936 ]
+"1423
+[v _UCFG UCFG `VEuc  1 e 1 @3937 ]
+"1485
+[v _UIR UIR `VEuc  1 e 1 @3938 ]
+[s S1583 . 1 `uc 1 URSTIF 1 0 :1:0 
+`uc 1 UERRIF 1 0 :1:1 
+`uc 1 ACTVIF 1 0 :1:2 
+`uc 1 TRNIF 1 0 :1:3 
+`uc 1 IDLEIF 1 0 :1:4 
+`uc 1 STALLIF 1 0 :1:5 
+`uc 1 SOFIF 1 0 :1:6 
+]
+"1501
+[u S1591 . 1 `S1583 1 . 1 0 ]
+[v _UIRbits UIRbits `VES1591  1 e 1 @3938 ]
+"1540
+[v _USTAT USTAT `VEuc  1 e 1 @3939 ]
+"1590
+[v _UCON UCON `VEuc  1 e 1 @3940 ]
+[s S46 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 SUSPND 1 0 :1:1 
+`uc 1 RESUME 1 0 :1:2 
+`uc 1 USBEN 1 0 :1:3 
+`uc 1 PKTDIS 1 0 :1:4 
+`uc 1 SE0 1 0 :1:5 
+`uc 1 PPBRST 1 0 :1:6 
+]
+"1606
+[u S54 . 1 `S46 1 . 1 0 ]
+[v _UCONbits UCONbits `VES54  1 e 1 @3940 ]
+"2107
+[v _SLRCON SLRCON `VEuc  1 e 1 @3958 ]
+"2290
+[v _ANSEL ANSEL `VEuc  1 e 1 @3966 ]
+"2334
+[v _ANSELH ANSELH `VEuc  1 e 1 @3967 ]
+[s S337 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"2504
+[s S1048 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 SDI 1 0 :1:4 
+`uc 1 RX 1 0 :1:5 
+`uc 1 SCL 1 0 :1:6 
+`uc 1 TX 1 0 :1:7 
+]
+[s S1054 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 SDA 1 0 :1:4 
+`uc 1 DT 1 0 :1:5 
+`uc 1 SCK 1 0 :1:6 
+`uc 1 CK 1 0 :1:7 
+]
+[s S1060 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 AN10 1 0 :1:4 
+`uc 1 AN11 1 0 :1:5 
+]
+[u S1064 . 1 `S337 1 . 1 0 `S1048 1 . 1 0 `S1054 1 . 1 0 `S1060 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES1064  1 e 1 @3969 ]
+[s S284 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"2948
+[s S290 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 LB4 1 0 :1:4 
+]
+[s S293 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 LB5 1 0 :1:5 
+]
+[s S296 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 LB6 1 0 :1:6 
+]
+[s S299 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 LB7 1 0 :1:7 
+]
+[u S302 . 1 `S284 1 . 1 0 `S290 1 . 1 0 `S293 1 . 1 0 `S296 1 . 1 0 `S299 1 . 1 0 ]
+[v _LATBbits LATBbits `VES302  1 e 1 @3978 ]
+[s S209 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"3040
+[s S218 . 1 `uc 1 LC0 1 0 :1:0 
+]
+[s S220 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 LC1 1 0 :1:1 
+]
+[s S223 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LC2 1 0 :1:2 
+]
+[s S226 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 LC3 1 0 :1:3 
+]
+[s S229 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 LC4 1 0 :1:4 
+]
+[s S232 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 LC5 1 0 :1:5 
+]
+[s S235 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 LC6 1 0 :1:6 
+]
+[s S238 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 LC7 1 0 :1:7 
+]
+[u S241 . 1 `S209 1 . 1 0 `S218 1 . 1 0 `S220 1 . 1 0 `S223 1 . 1 0 `S226 1 . 1 0 `S229 1 . 1 0 `S232 1 . 1 0 `S235 1 . 1 0 `S238 1 . 1 0 ]
+[v _LATCbits LATCbits `VES241  1 e 1 @3979 ]
+"3205
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+[s S331 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"3231
+[u S343 . 1 `S331 1 . 1 0 `S337 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES343  1 e 1 @3987 ]
+"3334
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+[s S1529 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 TMR3IE 1 0 :1:1 
+`uc 1 USBIE 1 0 :1:2 
+`uc 1 BCLIE 1 0 :1:3 
+`uc 1 EEIE 1 0 :1:4 
+`uc 1 C2IE 1 0 :1:5 
+`uc 1 C1IE 1 0 :1:6 
+`uc 1 OSCFIE 1 0 :1:7 
+]
+"3864
+[s S1538 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 CMIE 1 0 :1:6 
+]
+[u S1541 . 1 `S1529 1 . 1 0 `S1538 1 . 1 0 ]
+[v _PIE2bits PIE2bits `VES1541  1 e 1 @4000 ]
+[s S1625 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 TMR3IF 1 0 :1:1 
+`uc 1 USBIF 1 0 :1:2 
+`uc 1 BCLIF 1 0 :1:3 
+`uc 1 EEIF 1 0 :1:4 
+`uc 1 C2IF 1 0 :1:5 
+`uc 1 C1IF 1 0 :1:6 
+`uc 1 OSCFIF 1 0 :1:7 
+]
+"3929
+[s S1634 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 CMIF 1 0 :1:6 
+]
+[u S1637 . 1 `S1625 1 . 1 0 `S1634 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES1637  1 e 1 @4001 ]
+[s S1792 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 TMR3IP 1 0 :1:1 
+`uc 1 USBIP 1 0 :1:2 
+`uc 1 BCLIP 1 0 :1:3 
+`uc 1 EEIP 1 0 :1:4 
+`uc 1 C2IP 1 0 :1:5 
+`uc 1 C1IP 1 0 :1:6 
+`uc 1 OSCFIP 1 0 :1:7 
+]
+"3994
+[s S1801 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 CMIP 1 0 :1:6 
+]
+[u S1804 . 1 `S1792 1 . 1 0 `S1801 1 . 1 0 ]
+[v _IPR2bits IPR2bits `VES1804  1 e 1 @4002 ]
+"5162
+[v _PSTRCON PSTRCON `VEuc  1 e 1 @4025 ]
+"5502
+[v _CCP1CON CCP1CON `VEuc  1 e 1 @4029 ]
+"5589
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @4030 ]
+"5914
+[v _SSPCON1 SSPCON1 `VEuc  1 e 1 @4038 ]
+[s S359 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"5934
+[s S365 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[u S370 . 1 `S359 1 . 1 0 `S365 1 . 1 0 ]
+[v _SSPCON1bits SSPCON1bits `VES370  1 e 1 @4038 ]
+"5983
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @4039 ]
+[s S385 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_NOT_W 1 0 :1:2 
+]
+"6070
+[s S388 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 D_NOT_A 1 0 :1:5 
+]
+[s S391 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+[s S400 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S405 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 A 1 0 :1:5 
+]
+[s S410 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S415 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S420 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_WRITE 1 0 :1:2 
+]
+[s S423 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_ADDRESS 1 0 :1:5 
+]
+[s S426 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S431 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 DA 1 0 :1:5 
+]
+[s S434 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW 1 0 :1:2 
+]
+[s S437 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 START 1 0 :1:3 
+]
+[s S440 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 STOP 1 0 :1:4 
+]
+[s S443 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_W 1 0 :1:2 
+]
+[s S446 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_A 1 0 :1:5 
+]
+[u S449 . 1 `S385 1 . 1 0 `S388 1 . 1 0 `S391 1 . 1 0 `S400 1 . 1 0 `S405 1 . 1 0 `S410 1 . 1 0 `S415 1 . 1 0 `S420 1 . 1 0 `S423 1 . 1 0 `S426 1 . 1 0 `S431 1 . 1 0 `S434 1 . 1 0 `S437 1 . 1 0 `S440 1 . 1 0 `S443 1 . 1 0 `S446 1 . 1 0 ]
+[v _SSPSTATbits SSPSTATbits `VES449  1 e 1 @4039 ]
+"6220
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @4041 ]
+"6226
+[v _T2CON T2CON `VEuc  1 e 1 @4042 ]
+"6296
+[v _PR2 PR2 `VEuc  1 e 1 @4043 ]
+"6405
+[v _TMR2 TMR2 `VEuc  1 e 1 @4044 ]
+[s S1725 . 1 `uc 1 NOT_BOR 1 0 :1:0 
+]
+"6576
+[s S1727 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_POR 1 0 :1:1 
+]
+[s S1730 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_PD 1 0 :1:2 
+]
+[s S1733 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_TO 1 0 :1:3 
+]
+[s S1736 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 NOT_RI 1 0 :1:4 
+]
+[s S1739 . 1 `uc 1 nBOR 1 0 :1:0 
+`uc 1 nPOR 1 0 :1:1 
+`uc 1 nPD 1 0 :1:2 
+`uc 1 nTO 1 0 :1:3 
+`uc 1 nRI 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 SBOREN 1 0 :1:6 
+`uc 1 IPEN 1 0 :1:7 
+]
+[s S1748 . 1 `uc 1 BOR 1 0 :1:0 
+`uc 1 POR 1 0 :1:1 
+`uc 1 PD 1 0 :1:2 
+`uc 1 TO 1 0 :1:3 
+`uc 1 RI 1 0 :1:4 
+]
+[u S1754 . 1 `S1725 1 . 1 0 `S1727 1 . 1 0 `S1730 1 . 1 0 `S1733 1 . 1 0 `S1736 1 . 1 0 `S1739 1 . 1 0 `S1748 1 . 1 0 ]
+[v _RCONbits RCONbits `VES1754  1 e 1 @4048 ]
+"6801
+[v _T0CON T0CON `VEuc  1 e 1 @4053 ]
+"6876
+[v _TMR0L TMR0L `VEuc  1 e 1 @4054 ]
+"6882
+[v _TMR0H TMR0H `VEuc  1 e 1 @4055 ]
+[s S875 . 1 `uc 1 RABIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RABIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"7319
+[s S884 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S893 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S897 . 1 `S875 1 . 1 0 `S884 1 . 1 0 `S893 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES897  1 e 1 @4082 ]
+"101 /Users/taka/Documents/CQ/CQ-MAX10/PIC-USB/USB_JTAG/firmware/src/main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"159
+} 0
+"298 /Users/taka/Documents/CQ/CQ-MAX10/PIC-USB/USB_JTAG/mla/framework/usb/src/usb_device.c
+[v _USBDeviceInit USBDeviceInit `(v  1 e 1 0 ]
+{
+"300
+[v USBDeviceInit@i i `uc  1 a 1 2 ]
+"385
+} 0
+"8 /Applications/microchip/xc8/v1.38/sources/common/memset.c
+[v _memset memset `(*.39v  1 e 2 0 ]
+{
+"15
+[v memset@p p `*.39uc  1 a 2 0 ]
+"8
+[v memset@p1 p1 `*.39v  1 p 2 44 ]
+[v memset@c c `i  1 p 2 46 ]
+[v memset@n n `ui  1 p 2 48 ]
+"22
+} 0
+"1352 /Users/taka/Documents/CQ/CQ-MAX10/PIC-USB/USB_JTAG/mla/framework/usb/src/usb_device.c
+[v _USBDeviceAttach USBDeviceAttach `(v  1 e 1 0 ]
+{
+"1382
+} 0
+"17 /Users/taka/Documents/CQ/CQ-MAX10/PIC-USB/USB_JTAG/firmware/src/timer.c
+[v _Timer_Init Timer_Init `(v  1 e 1 0 ]
+{
+"32
+} 0
+"374 /Users/taka/Documents/CQ/CQ-MAX10/PIC-USB/USB_JTAG/firmware/src/blaster.c
+[v _Main_Task_Blaster Main_Task_Blaster `(v  1 e 1 0 ]
+{
+"533
+[v Main_Task_Blaster@tx tx `uc  1 a 1 13 ]
+"473
+[v Main_Task_Blaster@opcode opcode `uc  1 a 1 16 ]
+"602
+[v Main_Task_Blaster@txsize txsize `uc  1 a 1 14 ]
+"584
+[v Main_Task_Blaster@txfifo_size txfifo_size `uc  1 a 1 15 ]
+"631
+} 0
+"995 /Users/taka/Documents/CQ/CQ-MAX10/PIC-USB/USB_JTAG/mla/framework/usb/src/usb_device.c
+[v _USBTransferOnePacket USBTransferOnePacket `(*.39v  1 e 2 0 ]
+{
+[v USBTransferOnePacket@ep ep `uc  1 a 1 wreg ]
+[s S935 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"997
+[s S944 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S951 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S955 _BD_STAT 1 `uc 1 Val 1 0 `S935 1 . 1 0 `S944 1 . 1 0 `S951 1 . 1 0 ]
+[s S960 . 4 `S955 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S965 . 4 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`ui 1 ADR 2 2 ]
+[u S969 __BDT 4 `S960 1 . 4 0 `S965 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v USBTransferOnePacket@handle handle `*.39VES969  1 a 2 1 ]
+"995
+[v USBTransferOnePacket@ep ep `uc  1 a 1 wreg ]
+[v USBTransferOnePacket@dir dir `uc  1 p 1 44 ]
+[v USBTransferOnePacket@data data `*.39uc  1 p 2 45 ]
+[v USBTransferOnePacket@len len `uc  1 p 1 47 ]
+"1000
+[v USBTransferOnePacket@ep ep `uc  1 a 1 0 ]
+"1047
+} 0
+"307 /Users/taka/Documents/CQ/CQ-MAX10/PIC-USB/USB_JTAG/firmware/src/blaster.c
+[v _TXFIFO_Write TXFIFO_Write `(v  1 e 1 0 ]
+{
+[v TXFIFO_Write@data data `uc  1 a 1 wreg ]
+[v TXFIFO_Write@data data `uc  1 a 1 wreg ]
+"309
+[v TXFIFO_Write@data data `uc  1 a 1 44 ]
+"311
+} 0
+"337
+[v _TXFIFO_Room TXFIFO_Room `(ui  1 e 2 0 ]
+{
+"340
+} 0
+"316
+[v _TXFIFO_Read TXFIFO_Read `(v  1 e 1 0 ]
+{
+[v TXFIFO_Read@ptr ptr `*.39uc  1 p 2 44 ]
+[v TXFIFO_Read@size size `uc  1 p 1 46 ]
+"324
+} 0
+"329
+[v _TXFIFO_Fill TXFIFO_Fill `(ui  1 e 2 0 ]
+{
+"332
+} 0
+"363
+[v _TIMER0_Reach_10ms TIMER0_Reach_10ms `(uc  1 e 1 0 ]
+{
+"365
+[v TIMER0_Reach_10ms@flag flag `uc  1 a 1 44 ]
+"369
+} 0
+"70 /Users/taka/Documents/CQ/CQ-MAX10/PIC-USB/USB_JTAG/firmware/src/jtag.c
+[v _JTAG_SPI_Wait JTAG_SPI_Wait `(v  1 e 1 0 ]
+{
+"73
+} 0
+"78
+[v _JTAG_SPI_Put JTAG_SPI_Put `(v  1 e 1 0 ]
+{
+[v JTAG_SPI_Put@byte byte `uc  1 a 1 wreg ]
+[v JTAG_SPI_Put@byte byte `uc  1 a 1 wreg ]
+"80
+[v JTAG_SPI_Put@byte byte `uc  1 a 1 45 ]
+"81
+} 0
+"86
+[v _JTAG_SPI_Get JTAG_SPI_Get `(uc  1 e 1 0 ]
+{
+"89
+} 0
+"130
+[v _bitrev bitrev `(uc  1 e 1 0 ]
+{
+[v bitrev@byte byte `uc  1 a 1 wreg ]
+[v bitrev@byte byte `uc  1 a 1 wreg ]
+"132
+[v bitrev@byte byte `uc  1 a 1 44 ]
+"133
+} 0
+"52
+[v _JTAG_Mode_SPI JTAG_Mode_SPI `(v  1 e 1 0 ]
+{
+"57
+} 0
+"62
+[v _JTAG_Mode_PORT JTAG_Mode_PORT `(v  1 e 1 0 ]
+{
+"65
+} 0
+"151 /Users/taka/Documents/CQ/CQ-MAX10/PIC-USB/USB_JTAG/firmware/src/blaster.c
+[v _Blaster_Init Blaster_Init `(v  1 e 1 0 ]
+{
+"167
+} 0
+"345
+[v _TIMER0_Start_10ms TIMER0_Start_10ms `(v  1 e 1 0 ]
+{
+"358
+} 0
+"17 /Users/taka/Documents/CQ/CQ-MAX10/PIC-USB/USB_JTAG/firmware/src/jtag.c
+[v _JTAG_Init JTAG_Init `(v  1 e 1 0 ]
+{
+"47
+} 0
+"278 /Users/taka/Documents/CQ/CQ-MAX10/PIC-USB/USB_JTAG/firmware/src/blaster.c
+[v _EEPROM_Checksum EEPROM_Checksum `(v  1 e 1 0 ]
+{
+"281
+[v EEPROM_Checksum@eeprom_data eeprom_data `ui  1 a 2 7 ]
+"280
+[v EEPROM_Checksum@i i `uc  1 a 1 9 ]
+"292
+} 0
+"228
+[v _EEPROM_Read EEPROM_Read `(uc  1 e 1 0 ]
+{
+[v EEPROM_Read@addr addr `uc  1 a 1 wreg ]
+"230
+[v EEPROM_Read@data data `uc  1 a 1 0 ]
+"228
+[v EEPROM_Read@addr addr `uc  1 a 1 wreg ]
+"230
+[v EEPROM_Read@addr addr `uc  1 a 1 1 ]
+"273
+} 0
+"50 /Users/taka/Documents/CQ/CQ-MAX10/PIC-USB/USB_JTAG/firmware/src/system.c
+[v _SYS_InterruptHigh SYS_InterruptHigh `II(v  1 e 1 0 ]
+{
+"55
+} 0
+"489 /Users/taka/Documents/CQ/CQ-MAX10/PIC-USB/USB_JTAG/mla/framework/usb/src/usb_device.c
+[v _USBDeviceTasks USBDeviceTasks `(v  1 e 1 0 ]
+{
+"491
+[v USBDeviceTasks@i i `uc  1 a 1 29 ]
+"827
+} 0
+"298
+[v i2_USBDeviceInit USBDeviceInit `(v  1 e 1 0 ]
+{
+[v i2USBDeviceInit@i USBDeviceInit `uc  1 a 1 8 ]
+"385
+} 0
+"2302
+[v _USBWakeFromSuspend USBWakeFromSuspend `(v  1 s 1 USBWakeFromSuspend ]
+{
+"2346
+} 0
+"2245
+[v _USBSuspend USBSuspend `(v  1 s 1 USBSuspend ]
+{
+"2285
+} 0
+"2202
+[v _USBStallHandler USBStallHandler `(v  1 s 1 USBStallHandler ]
+{
+"2227
+} 0
+"2369
+[v _USBCtrlEPService USBCtrlEPService `(v  1 s 1 USBCtrlEPService ]
+{
+"2398
+[v USBCtrlEPService@setup_cnt setup_cnt `uc  1 a 1 28 ]
+"2427
+} 0
+"2469
+[v _USBCtrlTrfSetupHandler USBCtrlTrfSetupHandler `(v  1 s 1 USBCtrlTrfSetupHandler ]
+{
+"2518
+} 0
+"1616
+[v _USBCtrlEPServiceComplete USBCtrlEPServiceComplete `(v  1 s 1 USBCtrlEPServiceComplete ]
+{
+"1748
+} 0
+"1488
+[v _USBCtrlEPAllowDataStage USBCtrlEPAllowDataStage `(v  1 e 1 0 ]
+{
+"1518
+} 0
+"2689
+[v _USBCheckStdRequest USBCheckStdRequest `(v  1 s 1 USBCheckStdRequest ]
+{
+"2736
+} 0
+"1968
+[v _USBStdSetCfgHandler USBStdSetCfgHandler `(v  1 s 1 USBStdSetCfgHandler ]
+{
+"1970
+[v USBStdSetCfgHandler@i i `uc  1 a 1 20 ]
+"2024
+} 0
+"8 /Applications/microchip/xc8/v1.38/sources/common/memset.c
+[v i2_memset memset `(*.39v  1 e 2 0 ]
+{
+[v i2memset@p memset `*.39uc  1 a 2 6 ]
+[v i2memset@p1 p1 `*.39v  1 p 2 0 ]
+[v i2memset@c c `i  1 p 2 2 ]
+[v i2memset@n n `ui  1 p 2 4 ]
+"22
+} 0
+"2129 /Users/taka/Documents/CQ/CQ-MAX10/PIC-USB/USB_JTAG/mla/framework/usb/src/usb_device.c
+[v _USBStdGetStatusHandler USBStdGetStatusHandler `(v  1 s 1 USBStdGetStatusHandler ]
+{
+[s S935 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"2161
+[s S944 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S951 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S955 _BD_STAT 1 `uc 1 Val 1 0 `S935 1 . 1 0 `S944 1 . 1 0 `S951 1 . 1 0 ]
+[s S960 . 4 `S955 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S965 . 4 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`ui 1 ADR 2 2 ]
+[u S969 __BDT 4 `S960 1 . 4 0 `S965 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v USBStdGetStatusHandler@p p `*.39S969  1 a 2 1 ]
+"2184
+} 0
+"2043
+[v _USBStdGetDscHandler USBStdGetDscHandler `(v  1 s 1 USBStdGetDscHandler ]
+{
+"2112
+} 0
+"2757
+[v _USBStdFeatureReqHandler USBStdFeatureReqHandler `(v  1 s 1 USBStdFeatureReqHandler ]
+{
+[s S935 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"2759
+[s S944 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S951 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S955 _BD_STAT 1 `uc 1 Val 1 0 `S935 1 . 1 0 `S944 1 . 1 0 `S951 1 . 1 0 ]
+[s S960 . 4 `S955 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S965 . 4 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`ui 1 ADR 2 2 ]
+[u S969 __BDT 4 `S960 1 . 4 0 `S965 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v USBStdFeatureReqHandler@p p `*.39S969  1 a 2 24 ]
+"2764
+[v USBStdFeatureReqHandler@pUEP pUEP `*.39uc  1 a 2 21 ]
+[s S1404 . 1 `uc 1 ping_pong_state 1 0 :1:0 
+`uc 1 transfer_terminated 1 0 :1:1 
+]
+"2760
+[u S1407 . 1 `S1404 1 bits 1 0 `uc 1 Val 1 0 ]
+[v USBStdFeatureReqHandler@current_ep_data current_ep_data `S1407  1 a 1 23 ]
+"2983
+} 0
+"164 /Users/taka/Documents/CQ/CQ-MAX10/PIC-USB/USB_JTAG/firmware/src/main.c
+[v _USER_USB_CALLBACK_EVENT_HANDLER USER_USB_CALLBACK_EVENT_HANDLER `(uc  1 e 1 0 ]
+{
+[v USER_USB_CALLBACK_EVENT_HANDLER@event event `E3638  1 p 2 12 ]
+[v USER_USB_CALLBACK_EVENT_HANDLER@pdata pdata `*.39v  1 p 2 14 ]
+[v USER_USB_CALLBACK_EVENT_HANDLER@size size `ui  1 p 2 16 ]
+"204
+} 0
+"197 /Users/taka/Documents/CQ/CQ-MAX10/PIC-USB/USB_JTAG/firmware/src/blaster.c
+[v _USB_FT245_Emulation USB_FT245_Emulation `(v  1 e 1 0 ]
+{
+"211
+[v USB_FT245_Emulation@addr addr `uc  1 a 1 8 ]
+"223
+} 0
+"228
+[v i2_EEPROM_Read EEPROM_Read `(uc  1 e 1 0 ]
+{
+[v i2EEPROM_Read@addr addr `uc  1 a 1 wreg ]
+[v i2EEPROM_Read@data EEPROM_Read `uc  1 a 1 6 ]
+[v i2EEPROM_Read@addr addr `uc  1 a 1 wreg ]
+"230
+[v i2EEPROM_Read@addr addr `uc  1 a 1 7 ]
+"273
+} 0
+"172
+[v _USB_Ept_Init USB_Ept_Init `(v  1 e 1 0 ]
+{
+"192
+} 0
+"62 /Users/taka/Documents/CQ/CQ-MAX10/PIC-USB/USB_JTAG/firmware/src/jtag.c
+[v i2_JTAG_Mode_PORT JTAG_Mode_PORT `(v  1 e 1 0 ]
+{
+"65
+} 0
+"878 /Users/taka/Documents/CQ/CQ-MAX10/PIC-USB/USB_JTAG/mla/framework/usb/src/usb_device.c
+[v _USBEnableEndpoint USBEnableEndpoint `(v  1 e 1 0 ]
+{
+[v USBEnableEndpoint@ep ep `uc  1 a 1 wreg ]
+"880
+[v USBEnableEndpoint@p p `*.39uc  1 a 2 9 ]
+"878
+[v USBEnableEndpoint@ep ep `uc  1 a 1 wreg ]
+[v USBEnableEndpoint@options options `uc  1 p 1 8 ]
+"884
+[v USBEnableEndpoint@ep ep `uc  1 a 1 11 ]
+"902
+} 0
+"1543
+[v _USBConfigureEndpoint USBConfigureEndpoint `(v  1 s 1 USBConfigureEndpoint ]
+{
+[v USBConfigureEndpoint@EPNum EPNum `uc  1 a 1 wreg ]
+[s S935 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"1545
+[s S944 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S951 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S955 _BD_STAT 1 `uc 1 Val 1 0 `S935 1 . 1 0 `S944 1 . 1 0 `S951 1 . 1 0 ]
+[s S960 . 4 `S955 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S965 . 4 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`ui 1 ADR 2 2 ]
+[u S969 __BDT 4 `S960 1 . 4 0 `S965 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v USBConfigureEndpoint@handle handle `*.39VES969  1 a 2 6 ]
+"1543
+[v USBConfigureEndpoint@EPNum EPNum `uc  1 a 1 wreg ]
+[v USBConfigureEndpoint@direction direction `uc  1 p 1 0 ]
+"1549
+[v USBConfigureEndpoint@EPNum EPNum `uc  1 a 1 5 ]
+"1585
+} 0
+"297 /Users/taka/Documents/CQ/CQ-MAX10/PIC-USB/USB_JTAG/firmware/src/blaster.c
+[v _TXFIFO_Init TXFIFO_Init `(v  1 e 1 0 ]
+{
+"302
+} 0
+"247 /Users/taka/Documents/CQ/CQ-MAX10/PIC-USB/USB_JTAG/mla/framework/usb/src/usb_device_generic.c
+[v _USBCheckVendorRequest USBCheckVendorRequest `(v  1 e 1 0 ]
+{
+"296
+} 0
+"2541 /Users/taka/Documents/CQ/CQ-MAX10/PIC-USB/USB_JTAG/mla/framework/usb/src/usb_device.c
+[v _USBCtrlTrfOutHandler USBCtrlTrfOutHandler `(v  1 s 1 USBCtrlTrfOutHandler ]
+{
+"2570
+} 0
+"1852
+[v _USBCtrlTrfRxService USBCtrlTrfRxService `(v  1 s 1 USBCtrlTrfRxService ]
+{
+"1854
+[v USBCtrlTrfRxService@byteToRead byteToRead `uc  1 a 1 1 ]
+"1855
+[v USBCtrlTrfRxService@i i `uc  1 a 1 0 ]
+"1947
+} 0
+"1416
+[v _USBCtrlEPAllowStatusStage USBCtrlEPAllowStatusStage `(v  1 e 1 0 ]
+{
+"1459
+} 0
+"2595
+[v _USBCtrlTrfInHandler USBCtrlTrfInHandler `(v  1 s 1 USBCtrlTrfInHandler ]
+{
+"2597
+[v USBCtrlTrfInHandler@lastDTS lastDTS `uc  1 a 1 1 ]
+"2670
+} 0
+"1771
+[v _USBCtrlTrfTxService USBCtrlTrfTxService `(v  1 s 1 USBCtrlTrfTxService ]
+{
+"1773
+[v USBCtrlTrfTxService@byteToSend byteToSend `uc  1 a 1 0 ]
+"1825
+} 0
